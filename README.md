@@ -24,6 +24,7 @@ Install my-project with git
 https://github.com/YaroslavYaryk/django-flask-react-microservices.git
 ```
 
+Install packages
 ```bash
 npm i
 ```
