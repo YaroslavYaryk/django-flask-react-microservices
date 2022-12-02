@@ -1,6 +1,7 @@
 import pika, json
+from decouple import config
 
-params = pika.URLParameters('amqps://bchoukaa:nmy6nGxY3nZaJDKY0s2zEwzjMr4G36Pw@cow.rmq2.cloudamqp.com/bchoukaa')
+params = pika.URLParameters(config("AMPQS"))
 
 connection = pika.BlockingConnection(params)
 

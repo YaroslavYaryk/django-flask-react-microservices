@@ -1,13 +1,12 @@
 import pika, json, os, django
+from decouple import config
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "admin.settings")
 django.setup()
 
 from products.models import Product
 
-params = pika.URLParameters(
-    "amqps://bchoukaa:nmy6nGxY3nZaJDKY0s2zEwzjMr4G36Pw@cow.rmq2.cloudamqp.com/bchoukaa"
-)
+params = pika.URLParameters(config("AMPQS"))
 
 connection = pika.BlockingConnection(params)
 
