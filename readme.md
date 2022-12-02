@@ -19,7 +19,7 @@ I'm a started full stack developer who creates not only frontend and backend but
 
 ## Installation
 
-Install my-project with git
+Download my-project with git
 
 ```bash
 https://github.com/YaroslavYaryk/django-flask-react-microservices.git
